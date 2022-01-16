@@ -1,8 +1,9 @@
 {
   "scripts": {
     "dev": "vite",
-    "start": "npm run dev",
-    "build": "vite build"
+    "start": "vite --port $PORT",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
       "vite": "2.7.6"
