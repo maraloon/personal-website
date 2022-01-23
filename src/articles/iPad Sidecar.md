@@ -1,5 +1,4 @@
-# Using iPad as main display
-
+# {{ title }}
 Lot of time I prefered laptops to any other form-factors to use for work and life. I'm fan of Apple so MacBook Pro is my workstation. I used it as a normal laptop but after bying my first mechanical keyboard I get that I can't stand native MacBook keyboard. So my workflow looked like this:
 
 IMG
