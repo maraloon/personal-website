@@ -1,8 +1,8 @@
 ---
 title: maraloon's personal webpage
-layout: layout.liquid
+layout: main.liquid
 ---
 
-{% for blog in collections.blog %}
-  - [{{ blog.data.title }}]({{ blog.url }})
+{% for article in collections.articles %}
+  - [{{ article.data.title }}]({{ article.url }})
 {% endfor %}
