@@ -1,7 +1,7 @@
 module.exports = async (eleventyConfig) => {
 
   return {
-    layout: 'articles.md',
+    layout: 'articles.liquid',
     tags: 'articles',
     eleventyComputed: {
       // for some reason fileSlug work another way from doc

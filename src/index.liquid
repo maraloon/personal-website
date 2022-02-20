@@ -9,5 +9,12 @@
   </ul>
 </nav>
 <main>
-    {{ content }}
+    <h1 class='text-xl mb-2'>Articles</h1>
+    <ul>
+    {% for article in collections.articles %}
+        <li>
+            <a href='{{ article.url }}'>{{ article.data.title }}</a>
+        </li>
+    {% endfor %}
+    </ul>
 </main>

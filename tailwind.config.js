@@ -3,15 +3,15 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: [ './dist/**/*.html' ],
   theme: {
-    extend: {},
+    extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.neutral.900'),
+          },
+        },
+      }),
+    },
   },
-  plugins: [
-    plugin(function({ addBase, theme }) {
-      addBase({
-        'h1': { fontSize: theme('fontSize.2xl') },
-        'h2': { fontSize: theme('fontSize.xl') },
-        'h3': { fontSize: theme('fontSize.lg') },
-      })
-    })
-  ],
+  plugins: [require('@tailwindcss/typography')],
 }
