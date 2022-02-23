@@ -3,10 +3,10 @@
     "node": "16.x"
   },
   "scripts": {
-    "dev": "eleventy & vite",
-    "start": "npx @11ty/eleventy & vite --port $PORT",
-    "build": "npx @11ty/eleventy & vite build",
-    "preview": "npx @11ty/eleventy & vite preview"
+    "dev": "eleventy --watch & vite",
+    "start": "npx @11ty/eleventy && vite --port $PORT",
+    "build": "npx @11ty/eleventy && vite build",
+    "preview": "npx @11ty/eleventy && vite preview"
   },
   "dependencies": {
     "vite": "2.7.6",
