@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "dev": "eleventy & vite",
-    "start": "vite --port $PORT",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "@11ty/eleventy & vite",
+    "start": "@11ty/eleventy & vite --port $PORT",
+    "build": "@11ty/eleventy & vite build",
+    "preview": "@11ty/eleventy & vite preview"
   },
   "dependencies": {
     "vite": "2.7.6"
