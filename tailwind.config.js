@@ -1,4 +1,5 @@
 const plugin = require('tailwindcss/plugin')
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   content: [ './dist/**/*.html' ],
@@ -8,6 +9,21 @@ module.exports = {
         DEFAULT: {
           css: {
             color: theme('colors.neutral.900'),
+            code: {
+              color: theme('colors.yellow.500'),
+              backgroundColor: theme('colors.neutral.800'),
+              padding: 2 
+            },
+            pre: {
+              color: theme('colors.yellow.500'),
+              backgroundColor: theme('colors.neutral.800'),
+              fontWeight: 'bold',
+              borderRadius: 'none'
+            },
+            li: {
+              listStyleType: 'square',
+            },
+            '--tw-prose-bullets': theme('colors.neutral.900'),
           },
         },
       }),

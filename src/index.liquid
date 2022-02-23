@@ -1,11 +1,11 @@
 {% render "main" %}
 
-<nav class='h-32 grid content-center place-content-center'>
+<nav class='my-24 grid content-center place-content-center'>
   <ul>
-    <li class='inline pr-28'><a href="http://instagram.com/mara.loon" target="_blank">[ instagram ]</a></li>
-    <li class='inline pr-28'><a href="https://twitter.com/mara_loon" target="_blank">[ twitter ]</a></li>
-    <li class='inline pr-28'><a href="https://t.me/maraloon" target="_blank">[ telegram ]</a></li>
-    <li class='inline'><a href="https://github.com/maraloon" target="_blank">[ github ]</a></li>
+    <li class='inline pr-28'><a href="http://instagram.com/mara.loon" target="_blank" rel="nofollow noreferrer">[ instagram ]</a></li>
+    <li class='inline pr-28'><a href="https://twitter.com/mara_loon" target="_blank" rel="nofollow noreferrer">[ twitter ]</a></li>
+    <li class='inline pr-28'><a href="https://t.me/maraloon" target="_blank" rel="nofollow noreferrer">[ telegram ]</a></li>
+    <li class='inline'><a href="https://github.com/maraloon" target="_blank" rel="nofollow noreferrer">[ github ]</a></li>
   </ul>
 </nav>
 <main>
@@ -13,7 +13,7 @@
     <ul>
     {% for article in collections.articles %}
         <li>
-            <a href='{{ article.url }}'>{{ article.data.title }}</a>
+            <a href='{{ article.url }}'> – {{ article.data.title }}</a>
         </li>
     {% endfor %}
     </ul>
