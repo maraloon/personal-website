@@ -1,9 +1,12 @@
 {
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
-    "dev": "@11ty/eleventy & vite",
-    "start": "@11ty/eleventy & vite --port $PORT",
-    "build": "@11ty/eleventy & vite build",
-    "preview": "@11ty/eleventy & vite preview"
+    "dev": "eleventy & vite",
+    "start": "npx @11ty/eleventy & vite --port $PORT",
+    "build": "npx @11ty/eleventy & vite build",
+    "preview": "npx @11ty/eleventy & vite preview"
   },
   "dependencies": {
     "vite": "2.7.6",
