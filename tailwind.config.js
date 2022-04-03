@@ -23,6 +23,9 @@ module.exports = {
             li: {
               listStyleType: 'square',
             },
+            hr: {
+              border: '1px solid'
+            },
             '--tw-prose-bullets': theme('colors.neutral.900'),
           },
         },
