@@ -11,6 +11,8 @@ export default {
         art1: resolve(__dirname, './dist/articles/izbytochnye-nazvaniya-klassov/index.html'),
         art2: resolve(__dirname, './dist/articles/pochemu-ya-rabotayu-tolko-s-laravel/index.html'),
         art3: resolve(__dirname, './dist/articles/zarplata/index.html'),
+        art4: resolve(__dirname, './dist/articles/kogo-i-kak-slushat-dzhunam/index.html'),
+        art5: resolve(__dirname, './dist/articles/zarplata-2/index.html'),
       }
     }
   }
