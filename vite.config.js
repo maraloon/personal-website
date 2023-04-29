@@ -13,6 +13,7 @@ export default {
         art3: resolve(__dirname, './dist/articles/zarplata/index.html'),
         art4: resolve(__dirname, './dist/articles/kogo-i-kak-slushat-dzhunam/index.html'),
         art5: resolve(__dirname, './dist/articles/zarplata-2/index.html'),
+        art6: resolve(__dirname, '.dist/articles/arhitektura-etogo-bloga/index.html'),
       }
     }
   }
