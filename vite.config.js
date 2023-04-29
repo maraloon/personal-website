@@ -1,20 +1,27 @@
 const { resolve } = require('path')
 const { defineConfig } = require('vite')
+const fs = require('fs');
+
+function generateArticles() {
+  const dirPath = resolve(__dirname, './dist/articles/');
+  const articles = {};
+
+  fs.readdirSync(dirPath).forEach((folderName, index) => {
+    articles[index] = resolve(dirPath, folderName, 'index.html');
+  });
+
+  return articles;
+}
 
 export default {
   root: "./dist",
   build: {
     outDir: "./",
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, './dist/index.html'),
-        art1: resolve(__dirname, './dist/articles/izbytochnye-nazvaniya-klassov/index.html'),
-        art2: resolve(__dirname, './dist/articles/pochemu-ya-rabotayu-tolko-s-laravel/index.html'),
-        art3: resolve(__dirname, './dist/articles/zarplata/index.html'),
-        art4: resolve(__dirname, './dist/articles/kogo-i-kak-slushat-dzhunam/index.html'),
-        art5: resolve(__dirname, './dist/articles/zarplata-2/index.html'),
-        art6: resolve(__dirname, './dist/articles/arhitektura-etogo-bloga/index.html'),
-      }
+      input: Object.assign(
+        { main: resolve(__dirname, './dist/index.html') },
+        generateArticles()
+      )
     }
   }
 }
